@@ -5,22 +5,30 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url("img/bg.png");
+
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+.section-btn {
+  flex-direction: column;
+}
+
+.section-btn-links-area {
+  display: flex;
+  flex-direction: column;
+}
+
 .hero-section {
   display: flex;
   justify-content: center;
-  padding: 50px 100px;
   flex-direction: column;
 }
 
 h1 {
+  text-align: center;
   color: white;
-  font-size: 84px;
   font-family: "Montserrat", sans-serif;
   margin: 0;
   margin-bottom: 20px;
@@ -28,7 +36,6 @@ h1 {
 
 h3 {
   color: white;
-  font-size: 40px;
   font-family: "Montserrat", sans-serif;
   margin: 0;
   margin-bottom: 20px;
@@ -36,20 +43,12 @@ h3 {
 
 p {
   color: white;
-  font-size: 25px;
   font-family: "Montserrat", sans-serif;
 }
 
 .svgha {
   width: 34px;
   height: 30px;
-}
-
-.section-btn {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
 }
 
 .tgPlus {
@@ -69,4 +68,152 @@ p {
   text-decoration: none;
   background-color: gray;
   font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 529px) {
+  .hero-section {
+    padding: 10px 20px;
+  }
+
+  body {
+    background-image: url("img/bg-mob.png");
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  a {
+    text-align: center;
+    font-size: 12px;
+    max-width: 150px;
+    margin-bottom: 20px;
+  }
+
+  .section-btn {
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (min-width: 530px) and (max-width: 767px) {
+  .hero-section {
+    padding: 10px 20px;
+  }
+
+  body {
+    background-image: url("img/bg-mob.png");
+    background-position: 0 -250px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  a {
+    text-align: center;
+    font-size: 12px;
+    max-width: 150px;
+    margin-bottom: 20px;
+  }
+
+  .section-btn {
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .hero-section {
+    padding: 40px 130px;
+  }
+
+  body {
+    background-image: url("img/bg.png");
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  a {
+    text-align: center;
+    font-size: 12px;
+    max-width: 150px;
+    margin-bottom: 20px;
+  }
+
+  .section-btn {
+    padding: 10px 20px;
+    align-items: center;
+  }
+
+  .section-btn-links-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tgPlus,
+  .tgMinus {
+    margin-right: 0;
+    font-size: 20px;
+    max-width: 220px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-section {
+    padding: 20px 40px;
+  }
+
+  body {
+    background-image: url("img/bg.png");
+  }
+
+  h1 {
+    font-size: 64px;
+  }
+
+  p {
+    font-size: 30px;
+  }
+
+  a {
+    text-align: center;
+    font-size: 12px;
+    max-width: 150px;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .section-btn-links-area {
+    align-items: center;
+  }
+
+  .tgPlus,
+  .tgMinus {
+    margin-right: 0;
+    font-size: 20px;
+    max-width: 220px;
+  }
 }
